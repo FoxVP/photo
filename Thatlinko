@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web development by Htet Wai Yan</title>
+    <style>
+        /* This hides the audio element completely */
+        #bg-music {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:Tomato;">That Lin Ko 2026🤵👰</h1>
+    <p style="color:DodgerBlue;"></p>
+  <p>>>>>>>>>>></p>
+  <p>>>>>>>>>>></p>
+
+    <!-- The audio tag loads the MP3 and sets it to loop continuously -->
+    <audio id="bg-music" loop>
+        <source src="https://github.com/FoxVP/photo/raw/refs/heads/main/e0aa8741af0943105d78438ce8bcc375.aac" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Waits for the user to click anywhere on the page, then plays the music
+        document.addEventListener('click', function() {
+            const music = document.getElementById('bg-music');
+            music.play();
+        }, { once: true }); // "once: true" ensures this only fires on the first click
+    </script>
+</head>
+<body>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Viewer</title>
+  <style>
+    /* Global Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    /* Thumbnail Gallery Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Full-Screen Modal Viewer Overlay */
+    .viewer-overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .viewer-content {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 4px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    /* Modal Navigation & Controls */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+    }
+    .close-btn:hover {
+      color: #bbb;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+      user-select: none;
+      background: none;
+      border: none;
+    }
+    .nav-btn:hover {
+      color: #bbb;
+    }
+    .prev-btn { left: 20px; }
+    .next-btn { right: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Gallery Section -->
+  <div class="gallery">
+    <!-- Replace src placeholder URLs with your actual image file paths -->
+ <img src="https://i.ibb.co/SXxnzy6J/859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280" border="0"></a>
+ <img src="https://i.ibb.co/G4FBXhv7/859c518f-9c65-48eb-9258-9258b1270082-0-1789992499177.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1789992499177" border="0"></a>
+ <img src="https://i.ibb.co/SXxnzy6J/859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280" border="0"></a>
+ <img src="https://i.ibb.co/SXxnzy6J/859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280" border="0"></a>
+ <img src="https://i.ibb.co/W4LmK4tr/IMG-20260920-110902.jpg" alt="IMG-20260920-110902" border="0"></a>
+ <img src="https://i.ibb.co/W4srFqTt/IMG-20260920-110907.jpg" alt="IMG-20260920-110907" border="0"></a>
+ <img src="https://i.ibb.co/SXxnzy6J/859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280" border="0"></a>
+ <img src="https://i.ibb.co/SXxnzy6J/859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280.webp" alt="859c518f-9c65-48eb-9258-9258b1270082-0-1790039025280" border="0"></a>
+ <img src="https://i.ibb.co/s9spLK3w/IMG-20260920-110901.jpg" alt="IMG-20260920-110901" border="0"></a>
+ <img src="https://i.ibb.co/JWJx9414/IMG-20260920-110543.jpg" alt="IMG-20260920-110543" border="0"></a>
+ <img src="https://i.ibb.co/ZzZnXKgT/IMG-20260920-110541.jpg" alt="IMG-20260920-110541" border="0"></a>
+ <img src="https://i.ibb.co/1JYm35dG/IMG-20260911-080807.jpg" alt="IMG-20260911-080807" border="0"></a>
+ <img src="https://i.ibb.co/1Gt6W0gg/IMG-20260911-080755.jpg" alt="IMG-20260911-080755" border="0"></a>
+ <img src="https://i.ibb.co/nNsHb76F/IMG-20260911-080752.jpg" alt="IMG-20260911-080752" border="0"></a>
+ <img src="https://i.ibb.co/0VCdxGfq/IMG-20260909-131844.jpg" alt="IMG-20260909-131844" border="0"></a>
+ <img src="https://i.ibb.co/ZRKJcdgv/IMG-20260909-131842-1.jpg" alt="IMG-20260909-131842-1" border="0"></a>
+ <img src="https://i.ibb.co/8WyQF5L/IMG-20260906-111310.jpg" alt="IMG-20260906-111310" border="0"></a>
+ <img src="https://i.ibb.co/DPgWrxcR/IMG-20260906-111332.jpg" alt="IMG-20260906-111332" border="0"></a>
+ <img src="https://i.ibb.co/tw6hsjNc/IMG-20260909-131842.jpg" alt="IMG-20260909-131842" border="0"></a>
+ <img src="https://i.ibb.co/QGbCLrM/IMG-20260906-094142.jpg" alt="IMG-20260906-094142" border="0"></a>
+ <img src="https://i.ibb.co/7NSWR7m0/IMG-20260906-094101.jpg" alt="IMG-20260906-094101" border="0"></a>
+ <img src="https://i.ibb.co/2Yc3QfN0/IMG-20260906-094130.jpg" alt="IMG-20260906-094130" border="0"></a>
+ <img src="https://i.ibb.co/nNHMhB1w/IMG-20260906-094132.jpg" alt="IMG-20260906-094132" border="0"></a>
+ <img src="https://i.ibb.co/kVhp1ts2/IMG-20260906-094139.jpg" alt="IMG-20260906-094139" border="0"></a>
+ <img src="https://i.ibb.co/6c58wGL2/IMG-20260906-094057.jpg" alt="IMG-20260906-094057" border="0"></a>
+ <img src="https://i.ibb.co/Kjt68TWR/IMG-20260906-094002.jpg" alt="IMG-20260906-094002" border="0"></a>
+ <img src="https://i.ibb.co/Cp5q8TJ2/IMG-20260906-093956.jpg" alt="IMG-20260906-093956" border="0"></a>
+ <img src="https://i.ibb.co/F4yfL6Y0/IMG-20260906-093826.jpg" alt="IMG-20260906-093826" border="0"></a>
+ <img src="https://i.ibb.co/sps1N2Rn/IMG-20260906-093327.jpg" alt="IMG-20260906-093327" border="0"></a>
+ <img src="https://i.ibb.co/Mxpdd2CS/IMG-20260906-093334.jpg" alt="IMG-20260906-093334" border="0"></a>
+ <img src="https://i.ibb.co/Jj68g1qd/IMG-20260906-093341.jpg" alt="IMG-20260906-093341" border="0"></a>
+ <img src="https://i.ibb.co/0VWpzBfv/IMG-20260906-093827.jpg" alt="IMG-20260906-093827" border="0"></a>
+ <img src="https://i.ibb.co/Fb3qxdxP/IMG-20260906-093321.jpg" alt="IMG-20260906-093321" border="0"></a>
+ <img src="https://i.ibb.co/7tYH72D6/d9ef2675-0ad8-46e0-8c51-96e355774c12.png" alt="d9ef2675-0ad8-46e0-8c51-96e355774c12" border="0"></a>
+ <img src="https://i.ibb.co/sJwdfz4k/d173a69c-3893-4b03-be72-bb64f392812d.png" alt="d173a69c-3893-4b03-be72-bb64f392812d" border="0"></a>
+ <img src="https://i.ibb.co/qMpqVwRK/d5996c94-e9d3-4331-b9e3-90942e01888dphoto-0.png" alt="d5996c94-e9d3-4331-b9e3-90942e01888dphoto-0" border="0"></a>
+ <img src="https://i.ibb.co/n84WFj7Z/73c05742-611c-455d-a1ac-7b904ea51653photo-0.png" alt="73c05742-611c-455d-a1ac-7b904ea51653photo-0" border="0"></a>
+ <img src="https://i.ibb.co/0VvRQBsX/73c05742-611c-455d-a1ac-7b904ea51653-0-1788154824463.webp" alt="73c05742-611c-455d-a1ac-7b904ea51653-0-1788154824463" border="0"></a>
+ <img src="https://i.ibb.co/23wc6C5D/693f66e9-8d85-48f4-9254-97b968293995photo-0.png" alt="693f66e9-8d85-48f4-9254-97b968293995photo-0" border="0"></a>
+ <img src="https://i.ibb.co/FqwYzYPx/129f9b27-7379-4de8-a1a5-b4ac8da2782d.png" alt="129f9b27-7379-4de8-a1a5-b4ac8da2782d" border="0"></a>
+ <img src="https://i.ibb.co/KcmFkG3L/IMG-20260825-061545.jpg" alt="IMG-20260825-061545" border="0"></a>
+ <img src="https://i.ibb.co/3Yf5tbdj/IMG-20260816-144912.jpg" alt="IMG-20260816-144912" border="0"></a>
+ <img src="https://i.ibb.co/tpgtDQs6/IMG-20260816-144421.jpg" alt="IMG-20260816-144421" border="0"></a>
+ <img src="https://i.ibb.co/bjLSvQ0w/IMG-20260816-120526.jpg" alt="IMG-20260816-120526" border="0"></a>
+ <img src="https://i.ibb.co/Kc2W91Ck/IMG-20260814-010206.jpg" alt="IMG-20260814-010206" border="0"></a>
+ <img src="https://i.ibb.co/jPJLsz5m/IMG-20260816-114944.jpg" alt="IMG-20260816-114944" border="0"></a>
+ <img src="https://i.ibb.co/Q3kHcyws/IMG-20260816-114949.jpg" alt="IMG-20260816-114949" border="0"></a>
+ <img src="https://i.ibb.co/d4RsTFXp/IMG-20260816-120522.jpg" alt="IMG-20260816-120522" border="0"></a>
+ <img src="https://i.ibb.co/hJFhG1df/IMG-20260814-010159.jpg" alt="IMG-20260814-010159" border="0"></a>
+ <img src="https://i.ibb.co/6RfDf1Vk/IMG-20260814-010137.jpg" alt="IMG-20260814-010137" border="0"></a>
+ <img src="https://i.ibb.co/dsBB2cDP/381971d1-9922-40df-b980-610a5eff1310-0-watermark.jpg" alt="381971d1-9922-40df-b980-610a5eff1310-0-watermark" border="0"></a>
+ <img src="https://i.ibb.co/ymkZS5WF/IMG-20260813-073450.jpg" alt="IMG-20260813-073450" border="0"></a>
+ <img src="https://i.ibb.co/XxjpV7pT/IMG-20260809-142255.jpg" alt="IMG-20260809-142255" border="0"></a>
+ <img src="https://i.ibb.co/MDbRFtzS/IMG-20260809-142138.jpg" alt="IMG-20260809-142138" border="0"></a>
+ <img src="https://i.ibb.co/nqv0fVbK/IMG-20260809-142124.jpg" alt="IMG-20260809-142124" border="0"></a>
+ <img src="https://i.ibb.co/vgkbCqV/IMG-20260728-175145.jpg" alt="IMG-20260728-175145" border="0"></a>
+ <img src="https://i.ibb.co/qMLYcgLL/IMG-20260727-143612.jpg" alt="IMG-20260727-143612" border="0"></a>
+ <img src="https://i.ibb.co/3m4gxmCy/IMG-20260725-144115.jpg" alt="IMG-20260725-144115" border="0"></a>
+ <img src="https://i.ibb.co/4RZNj0Xh/IMG-20260725-144058.jpg" alt="IMG-20260725-144058" border="0"></a>
+ <img src="https://i.ibb.co/NXS16tP/IMG-20260725-144008.jpg" alt="IMG-20260725-144008" border="0"></a>
+ <img src="https://i.ibb.co/d4WPvp6W/IMG-20260722-083056.jpg" alt="IMG-20260722-083056" border="0"></a>
+ <img src="https://i.ibb.co/XkFBmxcD/IMG-20260722-082806.jpg" alt="IMG-20260722-082806" border="0"></a>
+ <img src="https://i.ibb.co/JW6ZJfVk/IMG-20260722-082734-1.jpg" alt="IMG-20260722-082734-1" border="0"></a>
+ <img src="https://i.ibb.co/cSKBgWzt/IMG-20260722-082734.jpg" alt="IMG-20260722-082734" border="0"></a>
+ <img src="https://i.ibb.co/GQpyw936/IMG-20260722-082528.jpg" alt="IMG-20260722-082528" border="0"></a>
+ <img src="https://i.ibb.co/rf38pXyR/IMG-20260722-082610.jpg" alt="IMG-20260722-082610" border="0"></a>
+ <img src="https://i.ibb.co/nNDbHv3x/IMG-20260722-082631.jpg" alt="IMG-20260722-082631" border="0"></a>
+ <img src="https://i.ibb.co/2YP8NK3x/IMG-20260722-082634.jpg" alt="IMG-20260722-082634" border="0"></a>
+ <img src="https://i.ibb.co/CpVLPhWX/IMG-20260722-082349.jpg" alt="IMG-20260722-082349" border="0"></a>
+ <img src="https://i.ibb.co/BVv0Ccpt/IMG-20260722-082348.jpg" alt="IMG-20260722-082348" border="0"></a>
+ <img src="https://i.ibb.co/yn6xrGHy/IMG-20260722-082344.jpg" alt="IMG-20260722-082344" border="0"></a>
+ <img src="https://i.ibb.co/cKDVyRhj/IMG-20260722-082323-1.jpg" alt="IMG-20260722-082323-1" border="0"></a>
+ <img src="https://i.ibb.co/xtkYxFNG/IMG-20260722-083625.jpg" alt="IMG-20260722-083625" border="0"></a>
+ <img src="https://i.ibb.co/hF3FWb6H/IMG-20260722-084055.jpg" alt="IMG-20260722-084055" border="0"></a>
+ <img src="https://i.ibb.co/vxV0Pv42/IMG-20260722-082257.jpg" alt="IMG-20260722-082257" border="0"></a>
+ <img src="https://i.ibb.co/xS6pFwRv/IMG-20260722-082323.jpg" alt="IMG-20260722-082323" border="0"></a>
+ <img src="https://i.ibb.co/PGRNBYBt/IMG-20260722-082248.jpg" alt="IMG-20260722-082248" border="0"></a>
+ <img src="https://i.ibb.co/qMyyTzcR/IMG-20260722-082230.jpg" alt="IMG-20260722-082230" border="0"></a>
+ <img src="https://i.ibb.co/84r36pvt/IMG-20260722-082223.jpg" alt="IMG-20260722-082223" border="0"></a>
+ <img src="https://i.ibb.co/Y7DVr4RV/IMG-20260719-203153.jpg" alt="IMG-20260719-203153" border="0"></a>
+ <img src="https://i.ibb.co/HLjPTv1R/IMG-20260719-203151.jpg" alt="IMG-20260719-203151" border="0"></a>
+  </div>
+
+  <!-- 2. Overlay Viewer Section -->
+  <div class="viewer-overlay" id="viewerOverlay">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+    <img class="viewer-content" id="viewerImg" src="" alt="Enlarged view">
+    <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+  </div>
+
+  <!-- 3. JavaScript Functionality -->
+  <script>
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const overlay = document.getElementById('viewerOverlay');
+    const viewerImg = document.getElementById('viewerImg');
+    const closeBtn = document.getElementById('closeBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    let currentIndex = 0;
+
+    // Open viewer modal
+    function openViewer(index) {
+      currentIndex = index;
+      viewerImg.src = galleryImages[currentIndex].src;
+      overlay.style.display = 'flex';
+    }
+
+    // Close viewer modal
+    function closeViewer() {
+      overlay.style.display = 'none';
+      viewerImg.src = ''; // Clear source
+    }
+
+    // Show next image
+    function showNext() {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      viewerImg.src = galleryImages[currentIndex].src;
+    }
+
+    // Show previous image
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      viewerImg.src = galleryImages[currentIndex].src;
+    }
+
+    // Event Listeners
+    galleryImages.forEach((img, index) => {
+      img.addEventListener('click', () => openViewer(index));
+    });
+
+    closeBtn.addEventListener('click', closeViewer);
+    nextBtn.addEventListener('click', showNext);
+    prevBtn.addEventListener('click', showPrev);
+
+    // Close when clicking background grid mask instead of the image
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeViewer();
+    });
+
+    // Keyboard navigation controls
+    document.addEventListener('keydown', (e) => {
+      if (overlay.style.display === 'flex') {
+        if (e.key === 'Escape') closeViewer();
+        if (e.key === 'ArrowRight') showNext();
+        if (e.key === 'ArrowLeft') showPrev();
+      }
+    });
+  </script>
+
+</body>
+</html>
